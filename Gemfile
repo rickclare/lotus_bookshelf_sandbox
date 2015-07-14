@@ -13,6 +13,7 @@ gem 'slim'
 group :test do
   gem 'rspec'
   gem 'capybara'
+  gem 'fuubar'
 end
 
 group :production do
