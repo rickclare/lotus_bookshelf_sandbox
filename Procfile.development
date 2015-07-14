@@ -1,0 +1,11 @@
+# To execute:
+#    SSL_PORT=8443 PORT=8000 foreman start -f Procfile.development
+
+# If you add the following to you /etc/hosts file, you can visit
+#     http://www.example.dev:8000 or https://www.example.dev:8443
+#
+# 127.0.0.1 example.dev www.example.dev
+
+# web: FORCE_SSL=true SSL_PORT=$SSL_PORT bundle exec passenger start -p $PORT --max-pool-size 3 --min-instances 1 --ssl --ssl-port $SSL_PORT --ssl-certificate ./ssl/self-signed/star.example.dev.crt --ssl-certificate-key ./ssl/self-signed/star.example.dev.key
+
+web: bundle exec passenger start -p $PORT --max-pool-size 3 --min-instances 1

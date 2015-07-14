@@ -9,6 +9,7 @@ gem 'lotus-model',   '~> 0.4'
 
 gem 'pg'
 gem 'slim'
+gem 'passenger', require: false
 
 group :test do
   gem 'rspec'
@@ -17,5 +18,5 @@ group :test do
 end
 
 group :production do
-  gem 'passenger'
+  # TODO
 end
