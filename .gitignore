@@ -1,1 +1,6 @@
 /.bundle
+
+/log/*
+!/log/.gitkeep
+/tmp/pids/*
+!/tmp/pids/.gitkeep
