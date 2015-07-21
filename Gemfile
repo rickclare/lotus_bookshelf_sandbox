@@ -9,6 +9,8 @@ gem 'lotus-model',   '~> 0.4'
 
 gem 'pg'
 gem 'slim'
+
+gem 'foreman', require: false
 gem 'passenger', require: false
 
 group :test do
