@@ -1,0 +1,10 @@
+doctype 5
+html
+  head== render partial: 'head'
+
+  body
+    header(role='banner')== render partial: 'header'
+
+    main(role='main')== yield
+
+    footer(role='contentinfo')== render partial: 'layouts/footer'

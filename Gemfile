@@ -13,6 +13,13 @@ gem 'slim'
 gem 'foreman', require: false
 gem 'passenger', require: false
 
+group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+end
+
 group :test do
   gem 'rspec'
   gem 'capybara'
